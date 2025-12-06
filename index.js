@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 __path = process.cwd()
 const bodyParser = require("body-parser");
-const PORT = process.env.PORT || 7860;
+const PORT = process.env.PORT || 8000;
 let server = require('./qr'),
     code = require('./pair');
 require('events').EventEmitter.defaultMaxListeners = 500;
@@ -23,7 +23,7 @@ app.listen(PORT, () => {
     console.log(`
 Don't Forgot To Give Star
 
- Server running on http://localhost:` + PORT)
+⏩ Server running on http://localhost:` + PORT)
 })
 
 module.exports = app
